@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/* 초기화 스타일 (reset style ==> reset css) */
+* {
+	margin: 0;
+}
+
+/* css selector
+	1) universal : 공용 선택자, *
+	2) tag : 태그 선택자, p / h1 / img ...
+	3) class : 클래스 선택자,    .d-none
+	4) id : 아이디 선택자,   #box
+	5) group : 그룹 선택자    p, h1, .d-none ... [콤마]
+*/
+.d-none {
+	display: none; /* 표시: 없음 (vs block) */
+}	
+.logo {
+	/*text-align: center; 공간의 폭을 모를때, 그냥 가운데 정렬하고 싶을때 */
+	width: 100px; /* 가로폭: 100픽셀 */
+	height: 110px; /* 세로높이 : 110픽셀 */
+	margin: 50px auto; /* (바깥)여백: 상,하 50픽셀씩 / 좌,우 알아서(=자동으로 계산) */
+	/* px : 길이의 단위, 마치 cm, m 쓰듯.. */
+}
+.menu {
+	background-color: #005891; /* 색상 HEX CODE : 16진수 색상코드-->2의 16승 색상 */
+	text-align: center;	
+	padding: 15px 0; /* 패딩(안 여백) : 상하 10픽셀, 좌우 0 */
+	margin: 50px 0; /* 마진(바깥여백) : 상하 50픽셀, 좌우 0 */
+}
+.menu a {
+	color: white; /* 원래 a는 색상: blue, 텍스트-꾸밈 : underline */
+	text-decoration: none; /* 텍스트-꾸밈: 안함 */
+}
+.visual {
+	width: 800px;
+	height: 500px;
+	margin: 0 auto;
+}
+.text-movie {
+	margin: 50px 0;	
+}
+.text-movie .title-text {
+	text-align: center;	
+}
+.text-movie .title-text h2 {
+	font-size: 22px; /*글자-크기 : 22픽셀 */
+	text-transform: uppercase; /* 텍스트-변형: 대문자 */
+}
+.text-movie .title-text p {
+	font-size: 16px;
+	color: #555;
+}
+.movies {
+	width: 600px;
+	height: 300px;
+	margin: 0 auto;
+	/*
+		margin: 10px; - 상,하,좌,우 각각 10px
+		margin: 10px 0; - 상하 10px, 좌우 0px
+		margin: 10px 0 15px - 상10px, 좌우0, 하15px;
+		margin: 0 10px 5px 15px - 상0, 우10px, 하5px, 좌15px;
+	*/	
+	font-size: 0;
+}
+.sns, .cs, .copy {
+	text-align: center;
+}
+.cs {
+	margin: 30px 0;
+}
+.copy {
+	margin-top: 30px;
+	margin-bottom: 30px;   /* margin: 30px 0 */
+	/* -top, -right, -bottom, -left */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
