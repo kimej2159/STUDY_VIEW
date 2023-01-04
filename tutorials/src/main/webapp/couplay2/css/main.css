@@ -1,0 +1,260 @@
+@charset "utf-8";
+/* custom, common style */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+a {
+  text-decoration: none; /* 텍스트-꾸밈: 안함 */
+  color: inherit;
+}
+
+.d-none {
+  display: none;
+}
+
+.hidden_file {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* layout : lay + out (두다, 놓다, ~에 배치하다) */
+.tnb {
+  /* flex container 적용 스타일 : 결국, 자식(flex item) 영향받는 */
+  display: flex;
+  justify-content: center; /*flex-start(=left), center, flex-end(=right) */
+  font-size: 0.8125rem;
+  /* border-bottom: 1px solid #000; */
+  background-color: #eee;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+.tnb li {
+  color: #aaa;
+  margin: 0 0.5rem;
+}
+.tnb li:hover {
+  color: #333;
+}
+.header-logo {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.gnb {
+  display: flex;
+  justify-content: center;
+}
+.gnb li {
+  border: 1px solid #333;
+  padding: 1rem;
+  text-transform: uppercase; /* 텍스트-변형: 대문자 */
+}
+.gnb li:hover {
+  background-color: black;
+  color: beige;
+}
+.gnb li:nth-child(2) {
+  border-left: 0;
+  border-right: 0;
+}
+
+.bg-gold {
+  background-color: #ffea00;
+}
+.big-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+  padding: 2rem 0;
+}
+.big-text h2 {
+  font-size: 2.5rem; /* 반응형 단위: rem, em, %, vw, vh */
+  margin: 0 0 0.5rem 0;
+  text-transform: uppercase;
+}
+.big-text p {
+  font-size: 1rem;
+}
+.main article {
+  display: flex;
+  justify-content: center;
+}
+.form-wrap {
+  width: 90%;
+}
+table.type {
+  /* 종속 선택자 : table태그인데 클래스명이 type인 요소를 선택 */
+  margin-bottom: 2rem;
+}
+.form-wrap table {
+  width: 100%;
+}
+.form-wrap table th {
+  width: 30%;
+  text-align: left;
+  text-indent: 5rem;
+  background-color: #ddd;
+  padding: 1rem 0;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #999;
+}
+.form-wrap table td {
+  text-indent: 2rem;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #999;
+}
+.form-wrap caption {
+  font-size: 1.125rem;
+  margin: 0 0 0.5rem 0;
+  font-weight: bolder; /* 글꼴에 따라 다름 */
+}
+.form-wrap input {
+  padding: 0.25rem 0;
+  text-indent: 1rem;
+}
+#user_id,
+#user_pw,
+#user_name {
+  width: 60%;
+}
+#user_tel1 {
+  width: 10%;
+  padding: 0.25rem 0;
+  text-indent: 0.5rem;
+}
+#user_tel2,
+#user_tel3 {
+  width: 22.9%;
+}
+#email_domain {
+  padding: 0.25rem 0;
+}
+#user_email {
+  width: 43%;
+}
+#file_path {
+  width: 47.5%;
+}
+[for="user_file"] {
+  /* 속성 선택자 */
+  background-color: black;
+  color: white;
+  padding: 0.1rem 0.5rem;
+}
+[type="submit"],
+[type="reset"] {
+  text-indent: 0 !important; /* 많이 사용하지 않도록.. */
+  padding: 0.875rem 2rem !important;
+  margin: 1rem 0;
+  font-size: 1.25rem;
+}
+[type="submit"] {
+  background-color: black;
+  color: white;
+}
+[type="reset"] {
+  background-color: transparent;
+  margin-left: 0.25rem;
+}
+
+.d-flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.bg-black {
+  background-color: black;
+}
+.text-white {
+  color: white;
+}
+.py-1 {
+  padding: 1rem 0;
+}
+.flex-column {
+  flex-direction: column;
+}
+.align-center {
+  align-items: center;
+}
+
+.site-info {
+  line-height: 1.5;
+}
+
+.login,
+.login td {
+  border: 0 !important;
+}
+
+.login label {
+  display: block;
+  margin: 5px 0;
+}
+.login #user_id,
+.login #user_pw {
+  width: 100%;
+  padding: 0.5rem 0;
+}
+.login [type="submit"] {
+  background-color: #d23939;
+  padding: 0.5rem 1.25rem !important;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  border: 0;
+}
+.form-wrap table.login td {
+  text-indent: 0;
+}
+.group {
+  flex-direction: row;
+}
+.group-form [for="user_id"] {
+  padding: 0 0 0 20px;
+  background-image: url("../images/icon-person.png");
+  background-repeat: no-repeat;
+}
+.group-form [for="user_pw"] {
+  padding: 0 0 0 20px;
+  background-image: url("../images/icon-lock.png");
+  background-repeat: no-repeat;
+}
+.group-ad {
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+}
+/* 반응형 스타일(II) */
+@media screen and (max-width: 480px) {
+  .form-wrap th {
+    display: none;
+  }
+  .form-wrap table td {
+    padding: 1rem 0;
+    text-indent: 0.5rem;
+  }
+  #user_id,
+  #user_pw,
+  #user_name {
+    width: 63%;
+  }
+  #tip {
+    display: inline;
+    color: rgb(200, 255, 0);
+    font-size: 0.875rem;
+  }
+  .td-mark {
+    display: inline-block;
+    width: 20%;
+  }
+  .group {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- open graph generator / 북마크 참고 : 각자 OG 삽입하세요! -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <title>커플레이 : MZ세대의 놀이문화</title>
+    <link rel="shortcut icon" href="images/favicon-red.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <h1 class="d-none">커플레이</h1>
+    <header>
+        <div class="header-topNav">
+            <nav>
+                <ul class="tnb">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">장바구니</a></li>
+                    <li><a href="#">주문조회</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- /.header-topNav -->
+        <div class="header-logo">
+            <img src="images/logo-red.png" alt="커플레이">
+        </div>
+        <!-- /.header-logo -->
+        <div class="header-mainNav">
+            <nav>
+                <ul class="gnb"><!-- global navigation bar : gnb-->
+                    <li><a href="#">shopping</a></li>
+                    <li><a href="#">sales</a></li>
+                    <li><a href="#">event</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- /.header-mainNav -->
+    </header>
+    <div class="bg-gold big-text">
+        <h2>join</h2>
+        <p>회원가입</p>
+    </div>
+    <section class="main">
+        <h2 class="d-none">커플레이 개인 및 사업자 회원가입 폼</h2>
+        <article>
+            <div class="form-wrap">
+                <form autocomplete="off">
+                    <table class="type">
+                        <caption>가입구분</caption>
+                        <tr class="bg-gray border-bottom py-1 text-left">
+                            <th>회원구분</th>
+                            <td>
+                                <input type="radio" name="join_type" id="private" checked>
+                                <label for="private">개인회원</label>
+                                <input type="radio" name="join_type" id="business">
+                                <label for="business">사업자회원</label>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <caption>기본정보</caption>
+                        <tr>
+                            <th>
+                                <label for="user_id">아이디</label>
+                            </th>
+                            <td>
+                                <span class="td-mark d-none">아이디</span>
+                                <input type="text" id="user_id" name="user_id" maxlength="12" autofocus placeholder="회원ID 또는 이메일 주소 입력">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="user_pw">비밀번호</label>
+                            </th>
+                            <td>
+                                <span class="td-mark d-none">비밀번호</span>
+                                <input type="password" maxlengthname="user_pw" id="user_pw" placeholder="특수문자, 영문 대소문자, 숫자조합">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="user_name">이름</label>
+                            </th>
+                            <td>
+                                <span class="td-mark d-none">이름</span>
+                                <input type="text" id="user_name" name="user_name" placeholder="최대 20자">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="user_tel">연락처</label>
+                            </th>
+                            <td><span class="td-mark d-none">연락처</span>
+                                <select id="user_tel1">
+                                    <option value="062">광주</option>
+                                    <option value="031">인천</option>
+                                    <option value="02" selected>서울</option>
+                                </select>
+                                -
+                                <input type="text" maxlength="4" id="user_tel2" name="user_tel2">
+                                -
+                                <input type="text" maxlength="4" id="user_tel3" name="user_tel3">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                sms 수신여부
+                            </th>
+                            <td>
+                                <span class="td-mark d-none">문자수신</span>
+                                <input type="checkbox" id="user_sms" name="user_sms">
+                                <label for="user_sms">수신함</label>
+                                <span id="tip" class="d-none">(광고 및 정보성 문자 메세지 수신여부)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="user_email">이메일</label>
+                            </th>
+                            <td>
+                                <span class="td-mark d-none">이메일</span>
+                                <input type="text" name="user_email" id="user_email">
+                                @
+                                <input type="text" name="hidden_domain" class="d-none" id="hidden_domain" disabled="disabled">
+                                <select id="email_domain">
+                                    <option value="" selected>선택하세요</option>
+                                    <option value="naver.com">네이버</option>
+                                    <option value="naver.com">카카오</option>
+                                    <option value="naver.com">지메일</option>
+                                    <option value="">직접입력</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                프로필사진
+                            </th>
+                            <td>
+                                <span class="td-mark d-none">프로필사진</span>
+                                <input type="text" name="file_path" id="file_path" disabled>
+                                <label for="user_file">찾아보기</label>
+                                <div class="hidden_file">
+                                    <input type="file" name="user_file" id="user_file">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <div id="btns" class="d-flex justify-center">
+                        <input type="submit" value="가입"><!-- 데이터 전송 버튼 -->
+                        <input type="reset" value="취소"><!-- 입력막대에 입력한 데이터를 지워지게 하는 버튼 -->
+                    </div>
+                    <!-- /#btns.d-flex justify-center -->
+                </form>
+            </div>
+            <!-- /.form-wrap -->
+        </article>
+    </section>
+    <!-- /.main -->
+    <footer>
+        <div class="extraNav">
+            <nav>
+                <ul class="d-flex py-1 justify-center bg-black text-white">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="site-info d-flex flex-column align-center py-1">
+            <p>광주광역시 서구 경열로3, 커플레이</p>
+            <p>copyright&copy; couplay. all rights reserved</p>
+        </div>
+    </footer>    
+    <script src="script/main.js"></script>
+</body>
+</html>

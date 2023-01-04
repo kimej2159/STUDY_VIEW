@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WIDMICE</title>
+	<link rel="apple-touch-icon" href="images/favicon.png">
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ 	<h1 class="d-none">WIDMICE - 대한민국 일등 MICE 산업의 리더</h1>
+	<!-- header+section.main+footer|c -->
+	<header>
+	<!-- 사이트 소개(=로고), 내비게이션(=메뉴), 검색창 -->
+		<div class="header-wrap">
+			<!-- .logo>a[href=#]>img[src=images/logo.png alt=widmice] -->
+			<div class="logo">
+				<a href="#">
+					<img src="images/logo.png" alt="widmice">
+				</a>
+			</div>
+			<!-- nav>ul#gnb>li*4>a[href=#] -->
+			<nav class="main-nav">
+				<ul id="gnb"><!-- global navigation bar : gnb -->
+					<li><a href="#section1">company</a></li>
+					<li><a href="#">business area</a></li>
+					<li><a href="#">portfolio</a></li>
+					<li><a href="#">contact us</a></li>
+				</ul>
+			</nav>
+			<div class="extra-nav">
+				<ul>
+					<li>
+						<a href="#"><img src="images/topicon1.png" alt="user icon" class="mr-1">my menu</a>
+					</li>
+					<li>
+						<a href="#"><img src="images/topicon2.png" alt="lock icon" class="mr-1">login</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /.header-wrap -->
+	</header>
+	<div class="visual">
+		<div class="visual-wrap">
+			<div class="balloon">
+				<img src="images/visual_img.png" alt="">
+			</div>
+			<div class="vision">
+				<h3>wid<span>mice</span></h3>
+				<p class="slogan">최고의 파트너쉽과<br>품격있는 서비스!</p>
+			</div>
+		</div>
+		<!-- /.visual-wrap -->
+	</div>
+	<section class="main">
+		<h2 class="d-none">widmice의 회사소개와 사업영역 컨텐츠</h2>
+		<article>
+			<div class="article-wrap">
+				<h3 id="section1"">company</h3>
+				<div class="about-company">
+					<div class="airplane">
+						<h4 class="d-none">위드마이스의 고객가치를 표현하는 비행기 사진</h4>
+						<img src="images/co_img.png" alt="비행기">
+					</div>
+					<div class="bg">
+						<div class="left-bg">
+							<h4 class="d-none">서울 도심의 스카이라인이 보이는 배경사진</h4>
+						</div>
+						<div class="right-bg">
+							<h4 class="d-none">기하학적인 무늬의 배경사진</h4>
+							<p>
+								<strong>위드마이스는</strong> Meeting, Incentive, Convention, Exhibition 등  
+								각 분야의 전문가들이 모인 MICE 기업으로써 매번 
+								업데이트 된 프로그램으로 고객들에게 품격 있는 서비스를 
+								제공하고 있습니다. 
+							</p>
+						</div>
+					</div>				
+				</div>
+			</div>
+		</article>
+		<article>
+			<!-- meeting, convention, exhibition/event, incentives : MICE -->
+			<div class="article-wrap">
+				<h3>business</h3>
+				<!-- 
+				리스트(=목록)
+				1) 비순차 목록(=Unordered List) : <ul>...</ul>
+				2) 순차 목록(=Ordered List) : <ol>...</ol>
+				3) 정의 목록(=Definition List) : <dl>...<dt>자동차</dt><dd>..이동수단..</dd>...</dl> 
+				※ ul과 ol의 항목(=List Item) : <li>...</li> 
+				-->
+				<ul class="category">
+					<li><p>flight &amp; hotel</p></li>
+					<li><p>convention</p></li>
+					<li><p>promotion</p></li>
+				</ul>
+			</div>
+			<!-- ul>li*3>p -->
+		</article>
+	</section>
+	<aside>
+		<div class="move-top">
+			<a href="#"><img src="images/btn_top.png" alt="맨 위로 이동"></a>
+		</div>
+	</aside>
+	<footer>
+		<!-- 사이트 소유권자, 연락처, 주소 정보 -->
+		<!-- (.logo-white>a>img)+(.site-info>p*2) -->
+		<div class="logo-white">
+			<a href="#">
+				<img src="images/footer_logo.png" alt="widmice">
+			</a>
+		</div>
+		<div class="site-info">
+			<p>(주)위드마이스    대표자 : 강정환, 이윤아    주소 : 아직 구하지 못했음    고객센터 : 062-1234-5678    개인정보관리책임자 : 할사람 손들어봐요</p>
+			<p>copyright&copy; WIDMICE&trade; all rights reserved.</p>
+		</div>
+	</footer>
+</body>
+</html>
