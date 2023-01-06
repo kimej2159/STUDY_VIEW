@@ -26,6 +26,23 @@ a, a:link {
 	margin-right: .250rem;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.circle { /* google font icon - round */
+	border-radius: 50%;
+	border: 1px solid #333;
+	width: 50px;
+	height: 50px;
+}
+
+
+
+
 /* layout(=lay + out) : 배치, ~를 (어디에) 두다, 놓다 */
 header {
 	background-color: rgba(0, 0, 0, .3); /* rgb+alpha(=투명도) */	 
@@ -204,6 +221,49 @@ header {
 	padding: 1rem 0
 }
 
+.carousel {
+	position: relative;
+}
+.arrows {
+	width: 100%;
+	top: calc(50% - 25px);
+	position: absolute;
+	background-color: rgba(255,255,0,.2);
+}
+.arrows .circle:nth-child(1) {
+	position: absolute;
+	left: -100px; /* position: static <-->원래 흐름인 블럭이나 인라인으로 배치 */
+}
+.arrows .circle:nth-child(2) {
+	position: absolute;
+	right: -100px; /* position: static <-->원래 흐름인 블럭이나 인라인으로 배치 */
+}
+
+
+.history {
+	display: flex;
+}
+.history li {
+	flex: 1
+}
+.btn-wrap {
+	
+}
+.btn-wrap button {
+	display: block;
+	width: 150px;
+	margin: 0 auto;
+	height: 60px;
+	background-color: white;
+	border: 1px solid black;
+}
+/* 버튼에 마우스 오버시 스타일을 변경 */
+.btn-wrap button:hover {
+	background-color: black;
+	color: white;
+}
+
+
 .move-top {
 	text-align: center;
 	position: relative;
@@ -215,8 +275,11 @@ header {
 
 
 
-.logo-white {
-	
+
+
+
+.logo-white a {
+	display: inline;
 }
 .site-info {
 	text-align: right;

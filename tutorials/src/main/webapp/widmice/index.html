@@ -9,6 +9,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
 	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -27,9 +28,9 @@
 			<nav class="main-nav">
 				<ul id="gnb"><!-- global navigation bar : gnb -->
 					<li><a href="#section1">company</a></li>
-					<li><a href="#">business area</a></li>
-					<li><a href="#">portfolio</a></li>
-					<li><a href="#">contact us</a></li>
+					<li><a href="#section2">business area</a></li>
+					<li><a href="#section3">portfolio</a></li>
+					<li><a href="#section4">contact us</a></li>
 				</ul>
 			</nav>
 			<div class="extra-nav">
@@ -85,9 +86,37 @@
 			</div>
 		</article>
 		<article>
+			<!-- portfolio article : 새롭게 UI를 간단히 구성해보고 직접 작성하기 -->
+			<div class="article-wrap">
+				<h3 id="section3">portfolio</h3>
+				<div class="carousel">
+					<div class="arrows">
+						<button type="button" class="circle">
+							<span class="material-symbols-outlined">
+								chevron_left
+							</span>
+						</button>
+						<button type="button" class="circle">
+							<span class="material-symbols-outlined">
+								chevron_right
+							</span>
+						</button>
+					</div>
+					<ul class="history">
+						<li><img src="https://picsum.photos/id/7/300/420" alt="dummy"></li>
+						<li><img src="https://picsum.photos/id/177/300/420" alt="dummy"></li>
+						<li><img src="https://picsum.photos/id/348/300/420" alt="dummy"></li>
+					</ul>
+				</div>
+				<div class="btn-wrap">
+					<button type="button" id="more">&plus; 더보기</button>
+				</div>
+			</div>
+		</article>
+		<article>
 			<!-- meeting, convention, exhibition/event, incentives : MICE -->
 			<div class="article-wrap">
-				<h3>business</h3>
+				<h3 id="section2">business</h3>
 				<!-- 
 				리스트(=목록)
 				1) 비순차 목록(=Unordered List) : <ul>...</ul>
@@ -121,6 +150,7 @@
 			<p>(주)위드마이스    대표자 : 강정환, 이윤아    주소 : 아직 구하지 못했음    고객센터 : 062-1234-5678    개인정보관리책임자 : 할사람 손들어봐요</p>
 			<p>copyright&copy; WIDMICE&trade; all rights reserved.</p>
 		</div>
-	</footer>
+	</footer>   <!--  alert('포트폴리오 페이지로 이동합니다.') -->
+	<script src="script/main.js"></script>
 </body>
 </html>
